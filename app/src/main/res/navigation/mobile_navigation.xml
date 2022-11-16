@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_gCategoria">
+    <fragment
+        android:id="@+id/nav_gCategoria"
+        android:name="com.gm3_developer.app_mysql_monroy.ui.categorias.Categorias"
+        android:label="Nueva categoría"
+        tools:layout="@layout/fragment_categorias" >
+        <action
+            android:id="@+id/action_nav_gCategoria_to_consultaCategoria"
+            app:destination="@id/consultaCategoria" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_gProducto"
+        android:name="com.gm3_developer.app_mysql_monroy.ui.productos.Productos"
+        android:label="Nuevo producto"
+        tools:layout="@layout/fragment_productos" >
+        <action
+            android:id="@+id/action_nav_gProducto_to_consultaProducto2"
+            app:destination="@id/consultaProducto" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/consultaCategoria"
+        android:name="com.gm3_developer.app_mysql_monroy.ui.categorias.ConsultaCategoria"
+        android:label="Categorías"
+        tools:layout="@layout/fragment_consulta_categoria" >
+        <action
+            android:id="@+id/action_consultaCategoria_to_nav_gProducto"
+            app:destination="@id/nav_gProducto" />
+    </fragment>
+
+    <activity
+        android:id="@+id/nav_tPrueba"
+        android:name="com.gm3_developer.app_mysql_monroy.MainActivity2"
+        android:label="Test Prueba"
+        tools:layout="@layout/activity_main2" />
+    <fragment
+        android:id="@+id/consultaProducto"
+        android:name="com.gm3_developer.app_mysql_monroy.ui.productos.ConsultaProducto"
+        android:label="Productos"
+        tools:layout="@layout/fragment_consulta_producto" >
+        <action
+            android:id="@+id/action_consultaProducto_to_nav_tPrueba"
+            app:destination="@id/nav_tPrueba" />
+    </fragment>
+
+</navigation>

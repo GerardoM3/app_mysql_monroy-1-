@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.productos.AEProducto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_id_producto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ti_nombre_prod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColorHint="@color/grey1"
+                >
+
+                <EditText
+                    android:id="@+id/et_nombre_producto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:drawablePadding="5dp"
+                    android:paddingLeft="1dp"
+                    android:drawableStart="@drawable/ic_name_prod"
+                    android:ems="10"
+                    android:hint="Nombre del Producto"
+                    android:inputType="text"
+                    android:textColor="#03168B"
+                    android:textSize="14dp"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ti_descripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColorHint="@color/grey1"
+                >
+
+                <EditText
+                    android:id="@+id/et_des_producto"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text=""
+                    android:layout_marginTop="0dp"
+                    android:drawablePadding="5dp"
+                    android:paddingLeft="1dp"
+                    android:drawableStart="@drawable/ic_descripcion"
+                    android:ems="10"
+                    android:hint="Descripción del Producto"
+                    android:inputType="text"
+                    android:textColor="#03168B"
+                    android:textSize="14dp"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ti_stock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColorHint="@color/grey1"
+                >
+
+                <EditText
+                    android:id="@+id/et_stock"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:drawablePadding="5dp"
+                    android:paddingLeft="1dp"
+                    android:drawableStart="@drawable/ic_stock"
+                    android:ems="10"
+                    android:hint="* Stock"
+                    android:inputType="numberDecimal"
+                    android:textColor="#03168B"
+                    android:textSize="14dp"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ti_precio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColorHint="@color/grey1"
+                >
+
+                <EditText
+                    android:id="@+id/et_precio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:drawablePadding="5dp"
+                    android:paddingLeft="1dp"
+                    android:drawableStart="@drawable/ic_money"
+                    android:ems="10"
+                    android:hint="* Precio"
+                    android:inputType="numberDecimal"
+                    android:textColor="#03168B"
+                    android:textSize="14dp"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ti_unidadmedida"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColorHint="@color/grey1"
+                >
+
+                <EditText
+                    android:id="@+id/et_unidad_medida"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:drawablePadding="5dp"
+                    android:paddingLeft="1dp"
+                    android:drawableStart="@drawable/ic_um"
+                    android:ems="10"
+                    android:hint="* Unidad de medida (U, MTS, ROLL, PIE)"
+                    android:inputType="text"
+                    android:textColor="#03168B"
+                    android:textSize="14dp"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <!--android:entries="@array/estadoProductos"-->
+            <Spinner
+                android:id="@+id/sp_estadoProducto"
+                style="@style/Widget.AppCompat.DropDownItem.Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:entries="@array/estadoProductos"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:spinnerMode="dialog"
+                android:textColorHint="@color/blue" />
+
+            <!--android:entries="@array/estadoProductos"-->
+
+
+            <!--android:entries="@array/sp_fk"-->
+            <Spinner
+                android:id="@+id/sp_fk_categoria"
+                style="@style/Widget.AppCompat.DropDownItem.Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:spinnerMode="dialog"
+                android:textColorHint="@color/blue" />
+
+            <!--android:entries="@array/sp_fk"-->
+
+            <TextView
+                android:id="@+id/tv_fechahora2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="yyyy-MM-dd HH:mm:ss"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/grey"
+                >
+
+                <Button
+                    android:id="@+id/btnActualizar"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/purple_200"
+                    android:onClick="modificar"
+                    android:text="Modificar"
+                    android:textColor="@color/white" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"/>
+
+                <Button
+                    android:id="@+id/btnEliminar"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/purple_200"
+                    android:onClick="eliminar_Producto"
+                    android:text="Eliminar"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

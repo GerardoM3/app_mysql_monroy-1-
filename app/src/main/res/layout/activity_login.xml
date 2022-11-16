@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.login.login"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="INICIAR SESIÓN"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Usuario"
+                    android:textSize="20dp"
+                    />
+
+                <EditText
+                    android:id="@+id/et_loginUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="Ingrese el usuario"
+                    android:inputType="textVisiblePassword"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contraseña"
+                    android:textSize="20dp"
+                    />
+                <EditText
+                    android:id="@+id/et_loginPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="Ingrese la contraseña"
+                    android:inputType="textWebPassword"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:clickable="true"
+                    android:onClick="register_go"
+                    android:padding="15dp"
+                    android:text="Regístrate"
+                    android:textColor="#5162D8"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnLogin"
+                android:layout_width="270dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:onClick="LogIn"
+                android:text="Iniciar Sesión"
+                android:background="@drawable/buttonshape"
+                android:shadowColor="#000000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="4"
+                android:textColor="#FFFFFF"
+                android:textSize="23sp"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.login.register"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrar nuevo usuario"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombres"
+                android:textSize="17dp"
+                />
+            <EditText
+                android:id="@+id/et_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#CCC"
+                android:hint="* Tus nombres"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apellidos"
+                android:textSize="17dp"
+                />
+            <EditText
+                android:id="@+id/et_apellidos"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#CCC"
+                android:hint="* Tus apellidos"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Correo electrónico"
+                android:textSize="17dp"
+                />
+            <EditText
+                android:id="@+id/et_correo"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#CCC"
+                android:hint="* Tu correo"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Usuario"
+                android:textSize="17dp"
+                />
+            <EditText
+                android:id="@+id/et_usuario"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#CCC"
+                android:hint="* Tu usuario"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contraseña"
+                android:textSize="17dp"
+                />
+            <EditText
+                android:id="@+id/et_clave"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#CCC"
+                android:hint="* Tu contraseña"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tipo"
+                android:textSize="17dp"
+                />
+
+            <Spinner
+                android:id="@+id/sp_tipo"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#CCC"
+                android:entries="@array/sp_tipo_user"
+                android:spinnerMode="dialog" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estado del usuario"
+                android:textSize="17dp"
+                />
+
+            <Spinner
+                android:id="@+id/sp_estado_usuarios"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#CCC"
+                android:entries="@array/sp_estado_user"
+                android:spinnerMode="dialog" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pregunta de recuperación de cuenta"
+                android:textSize="17dp"
+                />
+
+            <Spinner
+                android:id="@+id/sp_pregunta"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#CCC"
+                android:entries="@array/sp_pregunta_user"
+                android:spinnerMode="dialog" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Respuesta"
+                android:textSize="17dp"
+                />
+            <EditText
+                android:id="@+id/et_respuesta"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#CCC"
+                android:hint="* Tu respuesta"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+
+                <Button
+                    android:id="@+id/btnSaveUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="registerNow"
+                    android:padding="20dp"
+                    android:text="Registrar usuario" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="cancelar"
+                    android:padding="20dp"
+                    android:text="Cancelar" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

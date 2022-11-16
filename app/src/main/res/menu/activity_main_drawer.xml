@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_gCategoria"
+            android:icon="@drawable/ic_stock"
+            android:title="Guardar Categorias" />
+
+        <item
+            android:id="@+id/consultaCategoria"
+            android:icon="@drawable/ic_queryconsulta"
+            android:title="Consulta de Categorías" />
+
+        <item
+            android:id="@+id/nav_gProducto"
+            android:icon="@drawable/ic_add_productos"
+            android:title="Guardar Productos" />
+
+        <item
+            android:id="@+id/consultaProducto"
+            android:icon="@drawable/ic_name_prod"
+            android:title="Consulta de Productos" />
+
+        <item
+            android:id="@+id/nav_tPrueba"
+            android:icon="@drawable/ic_test"
+            android:title="Test Prueba" />
+    </group>
+</menu>

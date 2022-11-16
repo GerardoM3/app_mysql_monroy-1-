@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">app_mysql_monroy</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Gerardo Monroy</string>
+    <string name="nav_header_subtitle">gerardo.monroy21@itca.edu.sv</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="estadoCategorias">
+        <item> Seleccione estado de la categoría </item>
+        <item> 0 </item>
+        <item> 1 </item>
+    </string-array>
+
+    <string-array name="estadoProductos">
+        <item> Seleccione estado del producto </item>
+        <item> 0 </item>
+        <item> 1 </item>
+    </string-array>
+
+    <string-array name="sp_fk">
+        <item> Selecciona categoría </item>
+    </string-array>
+
+    <string-array name="sp_tipo_user">
+        <item> Seleccione el tipo </item>
+        <item> Administrador </item>
+        <item> Invitado </item>
+    </string-array>
+
+    <string-array name="sp_estado_user">
+        <item> Seleccione estado del usuario </item>
+        <item> 0 </item>
+        <item> 1 </item>
+    </string-array>
+
+    <string-array name="sp_pregunta_user">
+        <item> Seleccione la pregunta </item>
+        <item> ¿Cuál es el nombre de tu mascota? </item>
+        <item> ¿En qué escuela estudiaste? </item>
+        <item> ¿Cuál es tu cargo en tu puesto de trabajo? </item>
+    </string-array>
+</resources>
